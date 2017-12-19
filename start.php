@@ -28,4 +28,3 @@ try {
     echo "Problem retriving data from file\r\n";
     die();
 }
-print_r($servicesObject);
