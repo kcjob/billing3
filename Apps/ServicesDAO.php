@@ -54,9 +54,9 @@ class ServicesDAO
         }
       } elseif ($billObject->userName != $row['name']){
 
-        echo '***************************' . "\r\n";
-        echo '*CONFIGURE AND SEND EMAIL *' . "\r\n";
-        echo 'ß**************************' . "\r\n";
+        //echo '***************************' . "\r\n";
+        //echo '*CONFIGURE AND SEND EMAIL *' . "\r\n";
+        //echo 'ß**************************' . "\r\n";
 try {
         EmailMessageGenerator::createEmail($billObject);
 } catch(Exception $e){
@@ -82,9 +82,9 @@ try {
       }
 		} //end while
 
-    echo '***************************' . "\r\n";
-    echo '*CONFIGURE AND SEND EMAIL *' . "\r\n";
-    echo 'ß**************************' . "\r\n";
+    //echo '***************************' . "\r\n";
+    //echo '*CONFIGURE AND SEND EMAIL *' . "\r\n";
+    //echo 'ß**************************' . "\r\n";
 
     try {
             EmailMessageGenerator::createEmail($billObject);
